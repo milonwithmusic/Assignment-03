@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MERN Stack Engineer | Firoz Dev Portfolio</title>
+    <!-- Load Tailwind CSS via CDN for single-file usage -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom styles for background and font */
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f7f9fb; /* Light background */
+      }
+      /* Customizing the shadow and border for a professional look */
+      .card {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        border: 1px solid #e5e7eb;
+      }
+      /* Gradient for the main CTA button */
+      .cta-button {
+        background-image: linear-gradient(to right, #4c51bf, #667eea);
+      }
+    </style>
+  </head>
+  <body class="text-grey-200">
+    <!-- Header / Navigation (Simple) -->
+    <header class="bg-white sticky top-1 z-10 shadow-md">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold text-indigo-700">FirozDev</div>
+        <nav class="hidden md:flex space-x-6">
+          <a
+            href="#about"
+            class="text-gray-600 py-1 hover:text-indigo-600 transition duration-300"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="text-gray-600 py-1 hover:text-indigo-600 transition duration-300"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="text-gray-600 py-1 hover:text-indigo-600 transition duration-300"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="px-3 py-1 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition duration-300"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+      <!-- 1. Hero Section -->
+      <section id="hero" class="text-center mb-20">
+        <div class="flex flex-col items-center">
+          <!-- Placeholder Image (Replace with your actual photo) -->
+          <img
+            src="./images/Firoz_Workstation.jpg"
+            onerror="this.onerror=null; this.src='https://via.placeholder.com/128';"
+            alt="Firoz Dev Avatar"
+            class="w-32 h-32 rounded-full mb-6 border-4 border-indigo-500 shadow-lg"
+          />
+
+          <h1
+            class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-3"
+          >
+            Firoz Dev
+          </h1>
+          <p class="text-xl sm:text-2xl text-indigo-600 font-semibold mb-6">
+            MERN Stack Engineer | Full-Stack JavaScript Developer
+          </p>
+          <p class="max-w-3xl text-gray-600 mb-8">
+            Building robust, scalable, and high-performance web applications
+            using MongoDB, Express.js, React, and Node.js. Dedicated to clean
+            code and efficient solutions.
+          </p>
+          <a
+            href="#contact"
+            class="cta-button text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300"
+          >
+            Let's Connect
+          </a>
+        </div>
+      </section>
+
+      <!-- 2. About Me Section -->
+      <section id="about" class="mb-20 py-12">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+          About Me
+        </h2>
+        <div class="card bg-white p-6 sm:p-10 rounded-xl">
+          <p class="text-lg text-gray-700 leading-relaxed">
+            I specialize in end-to-end development, from designing MongoDB
+            schemas to deploying scalable Node.js APIs and crafting dynamic user
+            interfaces with React. My passion lies in solving complex problems
+            with elegant JavaScript solutions. With a focus on performance and
+            developer experience, I transform concepts into fully functional
+            applications ready for market. I'm currently expanding my knowledge
+            in Next.js and serverless architecture.
+          </p>
+        </div>
+      </section>
+
+      <!-- 3. Skills Section -->
+      <section id="skills" class="mb-20 py-12 bg-gray-50 rounded-xl card">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+          Technical Toolkit
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+          <!-- MERN Core -->
+          <div
+            class="bg-white p-4 text-center rounded-lg shadow-sm border border-indigo-200"
+          >
+            <span class="text-2xl">⚛️</span>
+            <h4 class="font-semibold text-gray-900 mt-2">React.js</h4>
+            <p class="text-sm text-gray-500">
+              Hooks, Context API, Redux/Zustand
+            </p>
+          </div>
+          <div
+            class="bg-white p-4 text-center rounded-lg shadow-sm border border-indigo-200"
+          >
+            <span class="text-2xl">🟢</span>
+            <h4 class="font-semibold text-gray-900 mt-2">Node.js</h4>
+            <p class="text-sm text-gray-500">API Gateway, Express.js</p>
+          </div>
+          <div
+            class="bg-white p-4 text-center rounded-lg shadow-sm border border-indigo-200"
+          >
+            <span class="text-2xl">🍃</span>
+            <h4 class="font-semibold text-gray-900 mt-2">MongoDB</h4>
+            <p class="text-sm text-gray-500">Mongoose, Aggregation Pipelines</p>
+          </div>
+          <div
+            class="bg-white p-4 text-center rounded-lg shadow-sm border border-indigo-200"
+          >
+            <span class="text-2xl">⚡️</span>
+            <h4 class="font-semibold text-gray-900 mt-2">Express.js</h4>
+            <p class="text-sm text-gray-500">Middleware, Authentication</p>
+          </div>
+
+          <!-- Auxiliary Skills -->
+          <div class="bg-white p-4 text-center rounded-lg shadow-sm">
+            <h4 class="font-semibold text-gray-900 mt-2">TypeScript</h4>
+          </div>
+          <div class="bg-white p-4 text-center rounded-lg shadow-sm">
+            <h4 class="font-semibold text-gray-900 mt-2">Next.js</h4>
+          </div>
+          <div class="bg-white p-4 text-center rounded-lg shadow-sm">
+            <h4 class="font-semibold text-gray-900 mt-2">Git/GitHub</h4>
+          </div>
+          <div class="bg-white p-4 text-center rounded-lg shadow-sm">
+            <h4 class="font-semibold text-gray-900 mt-2">Tailwind CSS</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Projects Section -->
+      <section id="projects" class="mb-20 py-12">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+          Featured Projects
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Project 1: E-Commerce Platform -->
+          <div
+            class="card bg-white rounded-xl overflow-hidden transform hover:scale-[1.02] transition duration-300"
+          >
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-indigo-600 mb-2">
+                E-Commerce API & Storefront
+              </h3>
+              <p class="text-gray-600 mb-4">
+                A full-featured e-commerce platform handling user
+                authentication, product catalog, cart management, and payment
+                processing.
+              </p>
+              <div class="flex flex-wrap gap-2 text-sm mb-4">
+                <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full"
+                  >MongoDB</span
+                >
+                <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full"
+                  >Node/Express</span
+                >
+                <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full"
+                  >React/Redux</span
+                >
+              </div>
+              <a
+                href="#"
+                class="text-indigo-500 hover:text-indigo-700 font-semibold transition duration-300 inline-flex items-center"
+              >
+                View Live Demo &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: Real-time Chat App -->
+          <div
+            class="card bg-white rounded-xl overflow-hidden transform hover:scale-[1.02] transition duration-300"
+          >
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-indigo-600 mb-2">
+                Real-time Task/Chat Application
+              </h3>
+              <p class="text-gray-600 mb-4">
+                A collaborative platform featuring real-time messaging and
+                shared task list management using WebSockets.
+              </p>
+              <div class="flex flex-wrap gap-2 text-sm mb-4">
+                <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full"
+                  >Socket.io</span
+                >
+                <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full"
+                  >Node.js</span
+                >
+                <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full"
+                  >React Hooks</span
+                >
+              </div>
+              <a
+                href="#"
+                class="text-indigo-500 hover:text-indigo-700 font-semibold transition duration-300 inline-flex items-center"
+              >
+                View GitHub Repo &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Contact Section -->
+      <section id="contact" class="py-12 bg-indigo-50 rounded-xl card">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+          Get In Touch
+        </h2>
+        <div class="max-w-xl mx-auto p-6">
+          <p class="text-lg text-center text-gray-700 mb-6">
+            I'm currently open to new opportunities. Feel free to reach out to
+            discuss collaboration or full-time roles.
+          </p>
+          <form action="#" method="POST" class="space-y-4">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="message"
+                class="block text-sm font-medium text-gray-700"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3"
+                placeholder="Tell me about your project or opportunity..."
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full cta-button text-white font-semibold py-3 rounded-md shadow-md hover:bg-indigo-700 transition duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <div class="flex justify-center space-x-6 mt-8">
+          <!-- Social Links Placeholder -->
+          <a
+            href="#"
+            class="text-indigo-600 hover:text-indigo-800 transition duration-300"
+            >LinkedIn</a
+          >
+          <a
+            href="#"
+            class="text-indigo-600 hover:text-indigo-800 transition duration-300"
+            >GitHub</a
+          >
+          <a
+            href="#"
+            class="text-indigo-600 hover:text-indigo-800 transition duration-300"
+            >Twitter</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+        &copy; 2025 Firoz Dev. Built with MERN passion.
+      </div>
+    </footer>
+  </body>
+</html>
